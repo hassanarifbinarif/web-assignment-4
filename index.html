@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myjscode.js"></script>
+    <title>Login Validation</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return false;">
+        name: <input type="text" id="name" onchange="calNameLength()" required>
+        <p id=nameWarning></p>
+
+        email: <input type="text" id="email" required>
+        <p id="emailWarning"></p>
+
+        password: <input type="password" id="password" onchange="calPassword()" required>
+        <p id="passwordWarning"></p>
+
+        confirm password: <input type="password" id="confirm-password" onchange="confirmPassword()" required>
+        <p id="confirm-passwordWarning"></p>
+
+        <button type="submit" id="submit-form" onclick="submit()">Submit</button>
+        <p id="submissionMessage"></p>
+    </form>
+</body>
+
+</html>
